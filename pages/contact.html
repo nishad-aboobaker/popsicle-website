@@ -1,75 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>memorice-contact</title>
+    <title>Memorice - Contact</title>
     <link rel="icon" type="image/x-icon" href="../images/icon.png">
     <link rel="stylesheet" href="../style/contact.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-
-    <div class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar">
         <div class="navbar-left">
-            <div class="slideshow-container">
-
-                <div class="mySlides fade">
-                    <img src="../images/popsicle icons/1.png" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../images/popsicle icons/2.png" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../images/popsicle icons/4.png" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../images/popsicle icons/5.png" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../images/popsicle icons/6.png" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../images/popsicle icons/7.png" style="width:100%">
-                </div>
-
-                <div class="mySlides fade">
-                    <img src="../images/popsicle icons/8.png" style="width:100%">
-                </div>
-            </div>
-
             <div class="heading">
-                <div class="me"><h1>me</h1></div>
-                <div class="mo"><h1>mo</h1></div>
-                <div class="ri"><h1>ri</h1></div>
-                <div class="ce"><h1>ce</h1></div>
+                <div class="me">
+                    <h1>me</h1>
+                </div>
+                <div class="mo">
+                    <h1>mo</h1>
+                </div>
+                <div class="ri">
+                    <h1>ri</h1>
+                </div>
+                <div class="ce">
+                    <h1>ce</h1>
+                </div>
             </div>
         </div>
         <div class="navbar-right">
             <div class="navbar-right-items"><a href="../index.html">HOME</a></div>
             <div class="navbar-right-items"><a href="../pages/about.html">ABOUT</a></div>
             <div class="navbar-right-items"><a href="../pages/store.html">STORE</a></div>
-            <div class="navbar-right-items"><a href="../pages/contact.html">CONTACT</a></div>
+            <div class="navbar-right-items"><a href="../pages/contact.html" class="active">CONTACT</a></div>
         </div>
-    </div>
-    <div style="text-align:center">
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+    </nav>
+
+    <!-- Animated Background -->
+    <div class="circles">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+        <div class="circle circle-3"></div>
     </div>
 
-    <div class="main">
-        <img src="../images/123.png" alt="" class="a">
-        <img src="../images/4429129.png" alt="" class="b">
-    </div>
-    <script src="../js/style.js"></script>
+    <!-- Main Content -->
+    <main class="contact-container">
+        <div class="contact-card">
+            <!-- Left Side: Visual -->
+            <div class="card-visual">
+                <h3>Hello!</h3>
+                <p>We'd love to hear from you.</p>
+                <!-- Optional: Use a nice illustration or just styled text -->
+                <div class="visual-art">
+                    <img src="../images/icon.png" alt="Popsicle Icon">
+                </div>
+            </div>
+
+            <!-- Right Side: Info -->
+            <div class="card-info">
+                <h2>Get in Touch</h2>
+
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Visit Us</h4>
+                        <p>123 Popsicle Avenue<br>Sweet Tooth City, FC 90210</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Us</h4>
+                        <p><a href="mailto:hello@memorice.com">hello@memorice.com</a></p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Call Us</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Memorice. All rights reserved.</p>
+    </footer>
 </body>
+
 </html>

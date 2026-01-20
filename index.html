@@ -1,82 +1,105 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Memorice</title>
-    <link rel="icon" type="image/x-icon" href="./images/icon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./style/index.css" />
-  </head>
+<html lang="en">
 
-  <body>
-    <div class="navbar">
-      <div class="navbar-left">
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <img src="./images/popsicle icons/1.png" alt="Popsicle Icon 1" style="width: 100%" />
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Memorice - Popsicle Paradise</title>
+  <link rel="icon" type="image/x-icon" href="./images/icon.png" />
+  <link rel="stylesheet" href="./style/index.css" />
+</head>
 
-          <div class="mySlides fade">
-            <img src="./images/popsicle icons/2.png" alt="Popsicle Icon 2" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="./images/popsicle icons/4.png" alt="Popsicle Icon 4" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="./images/popsicle icons/5.png" alt="Popsicle Icon 5" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="./images/popsicle icons/6.png" alt="Popsicle Icon 6" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="./images/popsicle icons/7.png" alt="Popsicle Icon 7" style="width: 100%" />
-          </div>
-
-          <div class="mySlides fade">
-            <img src="./images/popsicle icons/8.png" alt="Popsicle Icon 8" style="width: 100%" />
-          </div>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <!-- Logo Text -->
+      <div class="heading">
+        <div class="me">
+          <h1>me</h1>
         </div>
-
-        <div class="heading">
-          <div class="me"><h1>me</h1></div>
-          <div class="mo"><h1>mo</h1></div>
-          <div class="ri"><h1>ri</h1></div>
-          <div class="ce"><h1>ce</h1></div>
+        <div class="mo">
+          <h1>mo</h1>
         </div>
-      </div>
-      <div class="navbar-right">
-        <div class="navbar-right-items"><a href="./index.html">HOME</a></div>
-        <div class="navbar-right-items">
-          <a href="./pages/about.html">ABOUT</a>
+        <div class="ri">
+          <h1>ri</h1>
         </div>
-        <div class="navbar-right-items">
-          <a href="./pages/store.html">STORE</a>
-        </div>
-        <div class="navbar-right-items">
-          <a href="./pages/contact.html">CONTACT</a>
+        <div class="ce">
+          <h1>ce</h1>
         </div>
       </div>
     </div>
-    <div style="text-align: center">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
+    <div class="navbar-right">
+      <div class="navbar-right-items"><a href="./index.html" class="active">HOME</a></div>
+      <div class="navbar-right-items"><a href="./pages/about.html">ABOUT</a></div>
+      <div class="navbar-right-items"><a href="./pages/store.html">STORE</a></div>
+      <div class="navbar-right-items"><a href="./pages/contact.html">CONTACT</a></div>
     </div>
-    <div class="main-photo">
-      <img src="./images/4427171.png" alt="Main Photo" />
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Frozen <span class="highlight">Bliss</span></h1>
+      <p class="hero-subtitle">Taste the memories in every bite. 100% Natural. 100% Joy.</p>
+      <a href="./pages/store.html" class="cta-button">Explore Flavors</a>
     </div>
-    <script src="./js/style.js"></script>
-  </body>
+    <div class="hero-visual">
+      <!-- Using a placeholder or existing clear image for the hero visual -->
+      <!-- Ideally we'd have a transparent popsicle image here. 
+              Using css shapes or a specific image if available. 
+              For now, using the main large image but styled better. -->
+      <img src="./images/cards/1.png" alt="Featured Strawberry Popsicle" class="floating-popsicle" />
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <main>
+    <section class="features">
+      <div class="feature-card">
+        <div class="icon">🍓</div>
+        <h3>Real Fruit</h3>
+        <p>Made with fresh, hand-picked fruits for authentic flavor.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🌿</div>
+        <h3>All Natural</h3>
+        <p>No artificial preservatives. Just pure, frozen goodness.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">😋</div>
+        <h3>50+ Flavors</h3>
+        <p>From classic Strawberry to exotic Matcha, we have it all.</p>
+      </div>
+    </section>
+
+    <!-- Flavor Teaser -->
+    <section class="flavor-teaser">
+      <h2>Trending Now</h2>
+      <div class="flavor-grid">
+        <div class="flavor-item">
+          <img src="./images/cards/3.png" alt="Chocolate">
+          <span>Chocolate</span>
+        </div>
+        <div class="flavor-item">
+          <img src="./images/cards/4.png" alt="Mango">
+          <span>Mango</span>
+        </div>
+        <div class="flavor-item">
+          <img src="./images/cards/6.png" alt="Watermelon">
+          <span>Watermelon</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Memorice. All rights reserved.</p>
+  </footer>
+
+  <!-- No generic JS needed for this simple landing layout aside from maybe common navbar logic if we add it later 
+         But we keep the link if there is shared logic we want to preserve (though style.js was mostly slideshow) -->
+  <!-- <script src="./js/style.js"></script> -->
+</body>
+
 </html>
